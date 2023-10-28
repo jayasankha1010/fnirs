@@ -1,0 +1,16 @@
+16:53:10 **** Incremental Build of configuration Debug for project Simple_optode_standalone_Mod_Demod ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L431xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:1: warning: data definition has no type or storage class
+   74 | g = cos((2 * pi * FcutOff)/Fs);
+      | ^
+../Core/Src/main.c:74:1: warning: type defaults to 'int' in declaration of 'g' [-Wimplicit-int]
+../Core/Src/main.c:74:1: error: conflicting types for 'g'
+../Core/Src/main.c:73:7: note: previous definition of 'g' was here
+   73 | float g = 0.0;
+      |       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:53:11 Build Failed. 2 errors, 2 warnings. (took 815ms)
+

@@ -1,0 +1,10 @@
+16:53:17 **** Incremental Build of configuration Debug for project simple_optode ****
+make -j8 all 
+arm-none-eabi-size   simple_optode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18980	    120	   1832	  20932	   51c4	simple_optode.elf
+Finished building: default.size.stdout
+ 
+
+16:53:18 Build Finished. 0 errors, 0 warnings. (took 491ms)
+

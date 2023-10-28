@@ -1,0 +1,49 @@
+16:53:03 **** Incremental Build of configuration Debug for project Main_SPI_tester ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:135:28: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  135 |  HAL_UART_Transmit(&huart1,"\n",sizeof("\n"),10);
+      |                            ^~~~
+      |                            |
+      |                            char *
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:337,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:725:73: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  725 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~^~~~~
+../Core/Src/main.c:99:11: warning: variable 'TX_data' set but not used [-Wunused-but-set-variable]
+   99 |   uint8_t TX_data[10];
+      |           ^~~~~~~
+At top level:
+../Core/Src/main.c:295:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  295 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:262:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  262 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:224:13: warning: 'MX_SPI1_Init' defined but not used [-Wunused-function]
+  224 | static void MX_SPI1_Init(void)
+      |             ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "Main_SPI_tester.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Work_Parent\Biowire\fNIRS_hardware\Firmware\2-Optode-board\Main_SPI_tester\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main_SPI_tester.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main_SPI_tester.elf
+ 
+arm-none-eabi-size   Main_SPI_tester.elf 
+arm-none-eabi-objdump -h -S  Main_SPI_tester.elf  > "Main_SPI_tester.list"
+arm-none-eabi-objcopy  -O ihex  Main_SPI_tester.elf  "Main_SPI_tester.hex"
+   text	   data	    bss	    dec	    hex	filename
+   6960	     20	   1724	   8704	   2200	Main_SPI_tester.elf
+arm-none-eabi-objcopy  -O binary  Main_SPI_tester.elf  "Main_SPI_tester.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Main_SPI_tester.hex
+Finished building: Main_SPI_tester.bin
+ 
+ 
+Finished building: Main_SPI_tester.list
+ 
+
+16:53:04 Build Finished. 0 errors, 5 warnings. (took 1s.583ms)
+

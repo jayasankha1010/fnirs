@@ -1,0 +1,10 @@
+16:52:59 **** Incremental Build of configuration Debug for project Analog_reader ****
+make -j8 all 
+arm-none-eabi-size   Analog_reader.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9888	    120	   1872	  11880	   2e68	Analog_reader.elf
+Finished building: default.size.stdout
+ 
+
+16:53:00 Build Finished. 0 errors, 0 warnings. (took 754ms)
+

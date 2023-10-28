@@ -1,0 +1,10 @@
+16:53:18 **** Incremental Build of configuration Debug for project simple_optode_timer_int ****
+make -j8 all 
+arm-none-eabi-size   simple_optode_timer_int.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20504	    120	   1920	  22544	   5810	simple_optode_timer_int.elf
+Finished building: default.size.stdout
+ 
+
+16:53:19 Build Finished. 0 errors, 0 warnings. (took 627ms)
+

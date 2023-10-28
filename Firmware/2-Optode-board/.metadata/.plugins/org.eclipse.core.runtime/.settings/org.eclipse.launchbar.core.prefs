@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Optode_firmware Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Simple_optode_standalone Debug (1),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Simple_optode_standalone Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:nucleo_test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:simple_optode Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:simple_optode_timer_int Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Optode_firmware\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Optode_firmware\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Simple_optode_standalone\ Debug\ (1)/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Simple_optode_standalone\ Debug/activeLaunchMode=run

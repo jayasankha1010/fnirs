@@ -1,0 +1,20 @@
+07:24:54 **** Incremental Build of configuration Debug for project Simple_optode_standalone_DSP ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L431xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Simple_optode_standalone_DSP.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Work_Parent\Biowire\fNIRS_hardware\Firmware\2-Optode-board\Simple_optode_standalone_DSP\STM32L431RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Simple_optode_standalone_DSP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Simple_optode_standalone_DSP.elf
+ 
+arm-none-eabi-size   Simple_optode_standalone_DSP.elf 
+arm-none-eabi-objdump -h -S  Simple_optode_standalone_DSP.elf  > "Simple_optode_standalone_DSP.list"
+arm-none-eabi-objcopy  -O binary  Simple_optode_standalone_DSP.elf  "Simple_optode_standalone_DSP.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23540	    128	   2152	  25820	   64dc	Simple_optode_standalone_DSP.elf
+Finished building: default.size.stdout
+ 
+Finished building: Simple_optode_standalone_DSP.bin
+ 
+Finished building: Simple_optode_standalone_DSP.list
+ 
+
+07:24:56 Build Finished. 0 errors, 0 warnings. (took 1s.690ms)
+

@@ -1,0 +1,10 @@
+12:44:39 **** Incremental Build of configuration Debug for project Optode_firmware ****
+make -j8 all 
+arm-none-eabi-size   Optode_firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8360	     20	   1820	  10200	   27d8	Optode_firmware.elf
+Finished building: default.size.stdout
+ 
+
+12:44:40 Build Finished. 0 errors, 0 warnings. (took 565ms)
+

@@ -1,0 +1,10 @@
+16:53:12 **** Incremental Build of configuration Debug for project Simple_optode_standalone_dsp_temp ****
+make -j8 all 
+arm-none-eabi-size   Simple_optode_standalone_dsp_temp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22368	    128	   2152	  24648	   6048	Simple_optode_standalone_dsp_temp.elf
+Finished building: default.size.stdout
+ 
+
+16:53:13 Build Finished. 0 errors, 0 warnings. (took 502ms)
+

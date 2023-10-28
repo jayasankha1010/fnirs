@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Simple_optode_standalone_DSP&apos; to &apos;Simple_optode_standalone_Modulated&apos;" description="Rename resource &apos;Simple_optode_standalone_DSP&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Simple_optode_standalone_DSP" name="Simple_optode_standalone_Modulated" stamp="1649125991572" updateReferences="true"/>
+</session>

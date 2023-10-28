@@ -1,0 +1,10 @@
+23:33:30 **** Incremental Build of configuration Debug for project Combined_main_controller ****
+make -j8 all 
+arm-none-eabi-size   Combined_main_controller.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12372	    904	   2520	  15796	   3db4	Combined_main_controller.elf
+Finished building: default.size.stdout
+ 
+
+23:33:30 Build Finished. 0 errors, 0 warnings. (took 509ms)
+
